@@ -9,5 +9,5 @@ git clone ....
 git config --list 
 เช็ค user
 
-git config --global user.name "Your Name"
-git config --global user.email "youremail@yourdomain.com"
+- git config --global user.name "Your Name"
+- git config --global user.email "youremail@yourdomain.com"
