@@ -1,0 +1,7 @@
+- ห้ามเอา property key เก็บที่ function
+- ให้ใช้ " "
+- มีแต่ data ไม่มี function
+- can be Json ---> Array (convert)
+ใส่ '' เวลาเปรียบเทียบ array ใน json
+
+** ถ้าเจอ spread จะใส่ค่าให้เลย
