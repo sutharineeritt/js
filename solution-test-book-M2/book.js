@@ -20,9 +20,8 @@ class Book {
         return this.authors?.slice(1)
     }
     findAuthor(firstname, lastname){
-       return this.authors.find(a => a.firstname.toUpperCase() === firstname && a.lastname.toUpperCase() === lastname
-                                || a.firstname.toLowerCase() === firstname && a.lastname.toLowerCase() === lastname
-                                || a.firstname === firstname && a.lastname === lastname)??undefined
+       return this.authors.find(a => a.firstname.toUpperCase() == firstname.toUpperCase() && 
+              a.lastname.toUpperCase() == lastname.toUpperCase())??undefined
     }
     hasEbook(){
         return this.ebook
