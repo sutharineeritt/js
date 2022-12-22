@@ -21,7 +21,7 @@ function itemList(userItems) {
     //   obj.keywords.toLowerCase().indexOf(event.target.products.keywords) >= 0);
     // const findinput = querySelector('input')
     const keyword = event.target.value.toLowerCase()
-    const finditem = products.filter((product) =>
+    const finditem = items.filter((product) =>
       product.keywords.toLowerCase().includes(keyword)
     )
     showItems(finditem)
