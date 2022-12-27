@@ -12,15 +12,12 @@ class BookStore {
   }
 
   addNewBook(isbn, stocks){
-    for (const iterator of this.stores) {
-      if(iterator.isbn === isbn){
+    const bookIndex = this.stores.findIndex(a => a.isbn === isbn);
+    if (bookIndex !== -1) {
         return -1
-      }
     }
-    const newObj = {isbn: isbn, stocks: stocks}
-    this.stores.push(newObj)
-    return newObj.stocks
-    //stock value in case adding a new book into array successfully
+    this.stores.push({isbn: isbn, stocks: stocks});
+    return stocks;
     }
 
     sellBook(isbn, quantity) {
