@@ -7,7 +7,7 @@ class BookStore {
   }
   findBookIndex(isbn){
       return this.stores.findIndex(function(store){
-          return store.isbn === isbn;
+          return store.isbn === isbn ?? -1
       });
   }
 
