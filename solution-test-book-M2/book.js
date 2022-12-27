@@ -17,7 +17,7 @@ class Book {
         return this.authors?.[0]
     }
     getCoAuthors() {
-        return this.authors?.slice(1)
+        return this.authors.slice(1)??[]
     }
     findAuthor(firstname, lastname){
        return this.authors.find(a => a.firstname.toUpperCase() == firstname.toUpperCase() && 
