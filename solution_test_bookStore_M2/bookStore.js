@@ -6,9 +6,7 @@ class BookStore {
       this.stores = 0 || [];
   }
   findBookIndex(isbn){
-      return this.stores.findIndex(function(store){
-          return store.isbn === isbn ?? -1
-      });
+      return this.stores.findIndex(store => store.isbn === isbn)??-1
   }
 
   addNewBook(isbn, stocks){
